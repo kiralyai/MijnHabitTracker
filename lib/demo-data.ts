@@ -121,7 +121,7 @@ const habits: Habit[] = [
     id: "habit-no-porn",
     userId: DEMO_USER_ID,
     categoryId: "cat-discipline",
-    title: "No Porn",
+    title: "No P",
     description: "Keep the streak clean and protect focus.",
     icon: "ShieldCheck",
     color: "#0d9488",
