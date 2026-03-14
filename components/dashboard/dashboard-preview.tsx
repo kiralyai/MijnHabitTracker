@@ -16,7 +16,7 @@ export function DashboardPreview() {
     <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
       <TrendChartCard
         title="Weekly momentum"
-        description="A live taste of the Northstar dashboard with seeded habit activity."
+        description="A live preview of the MijnHabitTracker dashboard with sample habit activity."
         data={model.trendData}
       />
       <div className="grid gap-6">

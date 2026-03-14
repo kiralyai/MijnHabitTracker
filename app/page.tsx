@@ -16,7 +16,7 @@ export default function Home() {
                 <Sparkles className="size-5" />
               </div>
               <div>
-                <p className="font-heading text-2xl tracking-tight">Northstar</p>
+                <p className="font-heading text-2xl tracking-tight">MijnHabitTracker</p>
                 <p className="text-sm text-white/70">Premium habit tracking for serious consistency.</p>
               </div>
             </div>

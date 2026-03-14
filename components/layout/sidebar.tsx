@@ -23,7 +23,7 @@ export function Sidebar({ viewer, className }: { viewer: Viewer; className?: str
               <div className="flex items-center gap-3">
                 <HabitIcon name="Sparkles" color="#ff6b4a" className="bg-white/10 text-white" />
                 <div>
-                  <p className="font-heading text-xl tracking-tight">Northstar</p>
+                  <p className="font-heading text-xl tracking-tight">MijnHabitTracker</p>
                   <p className="text-sm text-white/70">Consistency, designed.</p>
                 </div>
               </div>
@@ -76,7 +76,7 @@ export function Sidebar({ viewer, className }: { viewer: Viewer; className?: str
       <Card className="rounded-[28px] border-white/10 bg-card/75 shadow-[0_16px_60px_-32px_rgba(15,23,42,0.45)]">
         <CardContent className="space-y-4 px-5 py-5">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">Northstar note</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">MijnHabitTracker note</p>
             <p className="mt-3 text-sm leading-6 text-muted-foreground">
               Keep the app small in the morning: open it, clear today, and leave. The weekly board is for calibration,
               not procrastination.

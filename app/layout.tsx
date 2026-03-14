@@ -15,7 +15,7 @@ const headingFont = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Northstar Habit Tracker",
+  title: "Mijn Habit Tracker",
   description: "Premium habit tracking for daily execution, streaks, and long-horizon progress.",
 };
 

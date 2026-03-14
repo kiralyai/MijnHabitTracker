@@ -23,7 +23,7 @@ function getTitle(pathname: string) {
   if (pathname.startsWith("/app/challenges")) return "Challenges";
   if (pathname.startsWith("/app/analytics")) return "Analytics";
   if (pathname.startsWith("/app/settings")) return "Settings";
-  return "Northstar";
+  return "MijnHabitTracker";
 }
 
 export function Topbar({ viewer }: { viewer: Viewer }) {
