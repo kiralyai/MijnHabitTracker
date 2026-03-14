@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 import { LogoutButton } from "@/components/auth/logout-button";
 import { NAV_ITEMS } from "@/lib/constants";
@@ -21,8 +22,16 @@ export function Sidebar({ viewer, className }: { viewer: Viewer; className?: str
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <HabitIcon name="Sparkles" color="#ff6b4a" className="bg-white/10 text-white" />
-                <div>
+                <span className="inline-flex size-10 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/10 shadow-sm shadow-black/5">
+  <Image
+    src="/public/logo.png"
+    alt="MijnHabitTracker logo"
+    width={40}
+    height={40}
+    className="h-full w-full object-cover"
+  />
+</span>
+              <div>
                   <p className="font-heading text-xl tracking-tight">MijnHabitTracker</p>
                   <p className="text-sm text-white/70">Consistency, designed.</p>
                 </div>
