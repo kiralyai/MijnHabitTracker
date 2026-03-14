@@ -21,18 +21,18 @@ export function Sidebar({ viewer, className }: { viewer: Viewer; className?: str
         <CardContent className="space-y-6 px-4 py-4">
           <div className="space-y-3">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="inline-flex size-10 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/10 shadow-sm shadow-black/5">
+              <div className="flex items-center gap-4">
+                <span className="inline-flex size-14 items-center justify-center overflow-hidden rounded-[22px] border border-white/10 bg-white/12 p-2 shadow-[0_10px_26px_-14px_rgba(0,0,0,0.45)]">
                   <Image
                     src="/logo.png"
                     alt="MijnHabitTracker logo"
-                    width={40}
-                    height={40}
-                    className="h-full w-full object-cover"
+                    width={56}
+                    height={56}
+                    className="h-full w-full object-contain"
                   />
                 </span>
-                <div>
-                  <p className="font-heading text-xl tracking-tight">MijnHabitTracker</p>
+                <div className="space-y-0.5">
+                  <p className="font-heading text-[1.35rem] tracking-tight">MijnHabitTracker</p>
                   <p className="text-sm text-white/70">Consistency, designed.</p>
                 </div>
               </div>

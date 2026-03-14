@@ -62,13 +62,13 @@ export function Topbar({ viewer }: { viewer: Viewer }) {
               "hidden rounded-2xl bg-[color:var(--brand-coral)] px-4 text-white hover:bg-[color:var(--brand-coral)]/90 sm:inline-flex",
             )}
           >
-            <span className="inline-flex size-7 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-white/10 shadow-sm shadow-black/5">
+            <span className="inline-flex size-9 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-white/12 p-1 shadow-sm shadow-black/5">
               <Image
                 src="/logo.png"
                 alt="MijnHabitTracker logo"
-                width={28}
-                height={28}
-                className="h-full w-full object-cover"
+                width={36}
+                height={36}
+                className="h-full w-full object-contain"
               />
             </span>
             New habit

@@ -12,14 +12,14 @@ export default function Home() {
       <section className="mx-auto max-w-[1440px] px-4 pt-6 pb-20 md:px-6 lg:px-10">
         <div className="rounded-[34px] border border-white/10 bg-[linear-gradient(135deg,rgba(15,23,42,0.98),rgba(17,24,39,0.94),rgba(13,148,136,0.84))] px-6 py-6 text-white shadow-[0_26px_90px_-36px_rgba(15,23,42,0.8)] md:px-8 lg:px-10">
           <header className="flex flex-col gap-5 border-b border-white/10 pb-6 md:flex-row md:items-center md:justify-between">
-            <div className="flex items-center gap-3">
-              <span className="inline-flex size-12 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/10 shadow-sm shadow-black/5">
+            <div className="flex items-center gap-4">
+              <span className="inline-flex size-16 items-center justify-center overflow-hidden rounded-[24px] border border-white/10 bg-white/10 p-2 shadow-[0_12px_30px_-16px_rgba(0,0,0,0.45)]">
                 <Image
                   src="/logo.png"
                   alt="MijnHabitTracker logo"
-                  width={48}
-                  height={48}
-                  className="h-full w-full object-cover"
+                  width={64}
+                  height={64}
+                  className="h-full w-full object-contain"
                 />
               </span>
               <div>

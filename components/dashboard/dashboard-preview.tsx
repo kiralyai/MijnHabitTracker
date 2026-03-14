@@ -39,13 +39,13 @@ export function DashboardPreview() {
           <CardContent className="space-y-5 pt-6">
             <div className="grid grid-cols-3 gap-3">
               <div className="rounded-[22px] border border-border/70 bg-background/70 p-4">
-                <span className="inline-flex size-4 items-center justify-center overflow-hidden rounded-md">
+                <span className="inline-flex size-6 items-center justify-center overflow-hidden rounded-lg bg-white/5 p-1">
                   <Image
                     src="/logo.png"
                     alt="MijnHabitTracker logo"
-                    width={16}
-                    height={16}
-                    className="h-full w-full object-cover"
+                    width={24}
+                    height={24}
+                    className="h-full w-full object-contain"
                   />
                 </span>
                 <p className="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Active</p>
