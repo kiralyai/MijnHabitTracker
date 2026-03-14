@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
 import {
   BookOpen,
@@ -17,7 +18,6 @@ import {
   ShieldBan,
   ShieldCheck,
   Snowflake,
-  Sparkles,
   Sunrise,
   WifiOff,
 } from "lucide-react";
@@ -42,13 +42,24 @@ const iconMap: Record<string, LucideIcon> = {
   ShieldBan,
   ShieldCheck,
   Snowflake,
-  Sparkles,
   Sunrise,
   WifiOff,
 };
 
 export function resolveIcon(name: string) {
-  return iconMap[name] ?? Sparkles;
+  return iconMap[name] ?? CircleCheckBig;
+}
+
+function LogoGlyph() {
+  return (
+    <Image
+      src="/logo.png"
+      alt="MijnHabitTracker logo"
+      width={40}
+      height={40}
+      className="h-full w-full object-cover"
+    />
+  );
 }
 
 function renderIcon(name: string) {
@@ -87,12 +98,14 @@ function renderIcon(name: string) {
       return <ShieldCheck className="size-4" />;
     case "Snowflake":
       return <Snowflake className="size-4" />;
+    case "Sparkles":
+      return <LogoGlyph />;
     case "Sunrise":
       return <Sunrise className="size-4" />;
     case "WifiOff":
       return <WifiOff className="size-4" />;
     default:
-      return <Sparkles className="size-4" />;
+      return <LogoGlyph />;
   }
 }
 

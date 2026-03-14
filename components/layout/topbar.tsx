@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
@@ -7,7 +8,6 @@ import { usePathname } from "next/navigation";
 import { LogoutButton } from "@/components/auth/logout-button";
 import { Sidebar } from "@/components/layout/sidebar";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
-import { HabitIcon } from "@/components/shared/habit-icon";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -62,7 +62,15 @@ export function Topbar({ viewer }: { viewer: Viewer }) {
               "hidden rounded-2xl bg-[color:var(--brand-coral)] px-4 text-white hover:bg-[color:var(--brand-coral)]/90 sm:inline-flex",
             )}
           >
-            <HabitIcon name="Sparkles" className="size-7 rounded-xl bg-white/16 text-white" />
+            <span className="inline-flex size-7 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-white/10 shadow-sm shadow-black/5">
+              <Image
+                src="/logo.png"
+                alt="MijnHabitTracker logo"
+                width={28}
+                height={28}
+                className="h-full w-full object-cover"
+              />
+            </span>
             New habit
           </Link>
           <LogoutButton className="hidden rounded-2xl sm:inline-flex" variant="outline" />

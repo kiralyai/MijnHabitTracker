@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BarChart3, CalendarCheck2, ShieldCheck, Sparkles, Target } from "lucide-react";
+import { ArrowRight, BarChart3, CalendarCheck2, ShieldCheck, Target } from "lucide-react";
 
 import { DashboardPreview } from "@/components/dashboard/dashboard-preview";
 import { Card, CardContent } from "@/components/ui/card";
@@ -12,9 +13,15 @@ export default function Home() {
         <div className="rounded-[34px] border border-white/10 bg-[linear-gradient(135deg,rgba(15,23,42,0.98),rgba(17,24,39,0.94),rgba(13,148,136,0.84))] px-6 py-6 text-white shadow-[0_26px_90px_-36px_rgba(15,23,42,0.8)] md:px-8 lg:px-10">
           <header className="flex flex-col gap-5 border-b border-white/10 pb-6 md:flex-row md:items-center md:justify-between">
             <div className="flex items-center gap-3">
-              <div className="inline-flex size-12 items-center justify-center rounded-2xl bg-white/10">
-                <Sparkles className="size-5" />
-              </div>
+              <span className="inline-flex size-12 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/10 shadow-sm shadow-black/5">
+                <Image
+                  src="/logo.png"
+                  alt="MijnHabitTracker logo"
+                  width={48}
+                  height={48}
+                  className="h-full w-full object-cover"
+                />
+              </span>
               <div>
                 <p className="font-heading text-2xl tracking-tight">MijnHabitTracker</p>
                 <p className="text-sm text-white/70">Premium habit tracking for serious consistency.</p>

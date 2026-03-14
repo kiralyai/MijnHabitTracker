@@ -1,6 +1,7 @@
 "use client";
 
-import { CheckCircle2, Sparkles, TrendingUp } from "lucide-react";
+import Image from "next/image";
+import { CheckCircle2, TrendingUp } from "lucide-react";
 
 import { createDemoDataset } from "@/lib/demo-data";
 import { getDashboardModel } from "@/lib/selectors";
@@ -38,7 +39,15 @@ export function DashboardPreview() {
           <CardContent className="space-y-5 pt-6">
             <div className="grid grid-cols-3 gap-3">
               <div className="rounded-[22px] border border-border/70 bg-background/70 p-4">
-                <Sparkles className="size-4 text-[color:var(--brand-coral)]" />
+                <span className="inline-flex size-4 items-center justify-center overflow-hidden rounded-md">
+                  <Image
+                    src="/logo.png"
+                    alt="MijnHabitTracker logo"
+                    width={16}
+                    height={16}
+                    className="h-full w-full object-cover"
+                  />
+                </span>
                 <p className="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Active</p>
                 <p className="mt-1 font-heading text-2xl">{model.activeHabitCount}</p>
               </div>
